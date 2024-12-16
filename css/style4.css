@@ -1,0 +1,145 @@
+/* Основные стили для текста */
+p, h1 {
+    font-weight: bold;
+    color: rgb(34, 139, 34); /* тёмно-зелёный цвет для текста */
+}
+
+.wrapper {
+    display: grid;
+    border: 2px solid #228B22; /* Зелёная граница для контейнера */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    background-color: #f0fff0; /* Светло-зелёный фон */
+}
+
+.box {
+    border: 2px solid #228B22; /* Зелёные границы для всех блоков */
+    min-height: 100px;
+    background-color: #e8f5e9; /* Тёмно-светло-зелёный фон для блоков */
+}
+
+.one, .two, .three, .four {
+    border: 0;
+    padding-bottom: 20px;
+}
+
+.six, .seven, .eight {
+    grid-row: 2 / 4;
+}
+
+.nine, .ten {
+    grid-row: 4 / 6;
+}
+
+/* Стиль для заголовка в блоке .one */
+.one {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.one h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+    color: #006400; /* Очень тёмный зелёный */
+}
+
+/* Стиль для .two и .three */
+.two, .three {
+    display: flex;
+    align-items: flex-end;
+}
+
+.two p, .three p {
+    margin-bottom: 0;
+    font-size: 1rem;
+    color: #388e3c; /* Светлый зелёный для текста */
+}
+
+.two input, .three input {
+    width: 50%;
+    border-width: 0 0 1px 0;
+    border-color: #388e3c; /* Тёмно-зелёная граница для полей ввода */
+    background-color: #f1f8e9; /* Очень светло-зелёный фон для полей ввода */
+}
+
+/* Стиль для .four */
+.four {
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    flex-direction: column;
+    padding-right: 5%;
+}
+
+.four p {
+    margin: 5px;
+    color: #388e3c; /* Светло-зелёный для текста */
+}
+
+.four .check {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Стиль для блока .five */
+.five {
+    grid-column: 1;
+    grid-row: 2 / 7;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+.five .todo {
+    text-align: end;
+    margin-right: 40px;
+    color: #006400; /* Тёмно-зелёный для текста */
+}
+
+.five .item {
+    width: 90%;
+    border: solid;
+    border-width: 0 0 1px 0;
+    border-color: #006400; /* Тёмно-зелёная граница для списка задач */
+    background-color: #e8f5e9; /* Светло-зелёный фон для элементов списка */
+}
+
+.five .item-text {
+    border: none;
+    width: 90%;
+    height: 30px;
+    background-color: #f1f8e9; /* Лёгкий зелёный фон для текстовых полей */
+}
+
+.five .item-check {
+    margin: 0;
+}
+
+/* Стиль для контейнера с днями */
+.container {
+    display: flex;
+    text-align: center;
+}
+
+.container p {
+    align-self: center;
+    width: 90%;
+    color: #006400; /* Тёмно-зелёный для текста */
+}
+
+/* Стиль для всех чекбоксов (дни недели) */
+input[type="checkbox"] {
+    accent-color: #388e3c; /* Зелёный цвет для чекбоксов */
+}
+
+/* Дополнительный стиль для блоков с днями недели */
+.box .container {
+    background-color: #f1f8e9; /* Светло-зелёный фон */
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}

@@ -1,0 +1,99 @@
+/* Загальні стилі */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f3ec78, #af4261);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Поле для вводу */
+#inputField {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: border 0.3s;
+}
+
+#inputField:focus {
+    border-color: #af4261;
+    outline: none;
+}
+
+/* Клавіатура */
+#keyboard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.key-row {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.key {
+    background: #f3ec78;
+    background: linear-gradient(135deg, #f3ec78, #af4261);
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.key:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.key:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.key.special {
+    background: #6a11cb;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+.key.space {
+    flex: 1;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    text-align: center;
+}
+
+/* Додаткові стилі для адаптивності */
+@media (max-width: 768px) {
+    #inputField {
+        font-size: 14px;
+    }
+
+    .key {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+}

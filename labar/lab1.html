@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Реєстрація - Луценко Станіслав</title>
+    <link rel="stylesheet" href="../css/style1.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#">Головна</a></li>
+          <li><a href="#">Про мене</a></li>
+          <li><a href="#">Контакти</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="registration-section">
+        <h2>Форма реєстрації</h2>
+        <p>Заповніть форму нижче, щоб створити свій обліковий запис.</p>
+
+        <form class="registration-form" action="https://webhook.site/199f1217-b5ee-4511-8712-62beeaaab165" method="POST">
+          <div class="form-group">
+            <label for="ім'я">Ім'я</label>
+            <input type="text" id="ім'я" name="ім'я" placeholder="Введіть ваше ім'я" required />
+          </div>
+
+          <div class="form-group">
+            <label for="прізвище">Прізвище</label>
+            <input type="text" id="прізвище" name="прізвище" placeholder="Введіть ваше прізвище" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="пароль">Пароль</label>
+            <input type="password" id="пароль" name="пароль" placeholder="Створіть пароль" required />
+          </div>
+
+          <div class="form-group">
+            <label for="підтвердження_пароля">Підтвердження пароля</label>
+            <input type="password" id="підтвердження_пароля" name="підтвердження_пароля" placeholder="Підтвердьте пароль" required />
+          </div>
+
+          <div class="form-group">
+            <label for="дата_народження">Дата народження</label>
+            <input type="date" id="дата_народження" name="дата_народження" />
+          </div>
+
+          <div class="form-group">
+            <label for="стать">Стать</label>
+            <select id="стать" name="стать">
+              <option value="чоловік">Чоловік</option>
+              <option value="жінка">Жінка</option>
+              <option value="інше">Інше</option>
+            </select>
+          </div>
+
+          <button type="submit" class="submit-button">Зареєструватися</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Луценко Станіслав. Усі права захищено.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+/* Основные стили */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e9f7f2; /* Светлый зеленый фон */
+  color: #2e7d32; /* Темно-зеленый цвет текста */
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #388e3c; /* Зеленый цвет заголовков */
+  font-size: 2.5em;
+}
+
+/* Стили для навигации */
+header {
+  background-color: #388e3c; /* Темно-зеленый для навигации */
+  padding: 20px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #81c784; /* Светлый зеленый на hover */
+}
+
+/* Стили для контейнера */
+.container {
+  background: linear-gradient(to right, #ffffff, #a5d6a7); /* Плавный градиент от белого до светло-зеленого */
+  padding: 30px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box {
+  background-color: #f1f8e9; /* Светло-зеленый фон для коробки */
+  border: 2px dashed #66bb6a; /* Зеленая пунктирная рамка */
+  padding: 20px;
+  margin: 15px 0;
+}
+
+form label {
+  font-size: 1.1em;
+  margin: 10px 0;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="checkbox"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 20px;
+  border-radius: 5px;
+  border: 1px solid #66bb6a; /* Зеленая рамка */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  border-color: #388e3c; /* Темно-зеленый цвет на фокус */
+  outline: none;
+  box-shadow: 0 0 5px rgba(56, 142, 60, 0.5);
+}
+
+/* Стили для ссылок */
+a {
+  color: #388e3c; /* Темно-зеленый цвет ссылок */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #66bb6a; /* Светлый зеленый при наведении */
+}
+
+/* Стили для абзацев */
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Стили для списка */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 5px 0;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+
+li.special + li {
+  text-decoration: line-through;
+}
+
+li:nth-child(even) {
+  font-weight: bold;
+}
+
+/* Стиль для ::first-letter */
+p::first-letter {
+  font-size: 36px;
+  background-color: #81c784; /* Светлый зеленый фон для первой буквы */
+}
+
+/* Стили для формы */
+input[type="checkbox"]:checked {
+  background-color: #81c784; /* Светлый зеленый для checked */
+}
+
+/* Дополнительные стили */
+footer {
+  background-color: #388e3c; /* Темно-зеленый фон футера */
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Анимация для навигации */
+nav ul li a::after {
+  content: " ↗";
+  font-size: 1.2em;
+  transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  transform: scale(1.2);
+}

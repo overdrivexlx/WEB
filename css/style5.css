@@ -1,0 +1,105 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f5e9; /* Светлый зеленый фон */
+    color: #2e7d32; /* Темно-зеленый цвет текста */
+}
+
+h1, h2 {
+    color: #1b5e20; /* Темный зеленый для заголовков */
+}
+
+a {
+    text-decoration: none;
+    color: #388e3c; /* Зеленый для ссылок */
+}
+
+a:hover {
+    color: #1b5e20; /* Темный зеленый при наведении */
+}
+
+/* Стили для хедера */
+header {
+    background-color: #43a047; /* Зеленый фон для хедера */
+    padding: 20px;
+    color: white;
+}
+
+.header-content h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-size: 1.2rem;
+    color: white;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Стили для секций */
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section#me img {
+    max-width: 5%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* Стили для списка практических работ */
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    font-size: 1.1rem;
+}
+
+/* Стили для футера */
+footer {
+    background-color: #388e3c; /* Зеленый фон для футера */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p a {
+    color: #ffffff;
+}
+
+footer p a:hover {
+    color: #1b5e20;
+}
